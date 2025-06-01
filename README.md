@@ -47,19 +47,19 @@ user
 # Useful Commands
 
 
-| Shell Helpers | JavaScript Equivalents|
-|:-------------:|:----------------------|
-| show dbs, show databases | db.adminCommand('listDatabases') |
-| use <db> | db = db.getSiblingDB('<db>') |
-| show collections | db.getCollectionNames() |
-| show users | db.getUsers() |
-| show roles | db.getRoles({showBuiltinRoles: true}) |
-| show log <logname> | db.adminCommand({ 'getLog' : '<logname>' }) |
-| show logs | db.adminCommand({ 'getLog' : '*' }) |
-| it | cursor = db.collection.find()
-if ( cursor.hasNext() ){
-   cursor.next();
-} |
+| Shell Helpers            | JavaScript Equivalents               |
+|:------------------------:|:-------------------------------------------:|
+| show dbs, show databases | db.adminCommand('listDatabases')            |
+| use <db>                 | db = db.getSiblingDB('<db>')                |
+| show collections         | db.getCollectionNames()                     |
+| show users               | db.getUsers()                               |
+| show roles               | db.getRoles({showBuiltinRoles: true})       |
+| show log <logname>       | db.adminCommand({ 'getLog' : '<logname>' }) |
+| show logs                | db.adminCommand({ 'getLog' : '*' })         |
+| it                       | cursor = db.collection.find()
+                             if ( cursor.hasNext() ){
+                                 cursor.next();
+                              }                                          |
 
 
 # Notes
@@ -71,9 +71,10 @@ if ( cursor.hasNext() ){
   
 * https://markdown.land/markdown-table
 
+## Command
 
 
-## Command # Misc Notes
+# Misc Notes
 
 * db.version()
 * db.stats()
